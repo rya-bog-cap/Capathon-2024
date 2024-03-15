@@ -1,0 +1,50 @@
+:root {
+    --black-synth:    #1b1e23;
+    --white-synth:    #f6eddb;
+    --peach-synth:    #ec8d75;
+    --coral-synth:    #bd4b64;
+    --fuchsia-synth:  #9e2281;
+    --indigo-synth:   #40265c;
+    --navy-synth:     #244584;
+    --blue-synth:     #50a9cf;
+    --aqua-synth:     #96e6c2;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background-color: var(--aqua-synth);
+    color: var(--indigo-synth);
+    border: 2px solid var(--aqua-synth);
+}
+
+.btn--outline {
+    background-color: transparent;
+    color: var(--white-synth);
+    padding: 8px 20px;
+    border: 2px solid var(--aqua-synth);
+    transition: all 0.3s ease-out;
+}
+
+.btn--medium {
+    padding: 8px 20px;
+    font-size: 20px;
+}
+
+.btn--large {
+    padding: 12px 26px;
+    font-size: 20px;
+}
+
+.btn--medium:hover,
+.btn--large:hover {
+    background: var(--white-synth);
+    color: var(--black-synth);
+    transition: all 0.3s ease-out;
+}
