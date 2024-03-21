@@ -10,13 +10,13 @@ const BackgrounParallex = () => {
         triggerOnce: true, // Only trigger once when entering the viewport
     });
 
-    const handleIntersection = () => {
-        if (inView) {
-        videoRef.current.play();
-        } else {
-        videoRef.current.pause();
-        }
-    };
+    // const handleIntersection = () => {
+    //     if (inView) {
+    //     videoRef.current.play();
+    //     } else {
+    //     videoRef.current.pause();
+    //     }
+    // };
 
     useEffect(() => {
         // Detect scroll direction
@@ -25,11 +25,10 @@ const BackgrounParallex = () => {
         const currentScrollY = window.scrollY;
         const scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
         lastScrollY = currentScrollY;
-        console.log(currentScrollY);
+        console.log('Scroll value:', currentScrollY);
 
         // Set video playback direction
         videoRef.playbackRate = scrollDirection === 'down' ? 1 : -1;
-        
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -39,7 +38,8 @@ const BackgrounParallex = () => {
     }, []);
 
     return (
-        
+       
+
         <video ref={videoRef} controls >
             <source src={BgGridVideo} type="video/mp4" />
         </video>
