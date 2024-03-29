@@ -6,6 +6,33 @@
   h1 {
     text-align: center;
   }
+
+  h3 {
+    color: rgb(255, 60, 255);
+    font-family: 'Audiowide';
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #card-index0 {
+    left: -700px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  #card-index1 {
+    left: 700px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
   
   .cards-container {
     display: flex;

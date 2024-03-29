@@ -1,9 +1,14 @@
 import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
-import HeroSection from './components/HeroSection';
+import BackgroundParallex from './components/BackgroundParallex';
 import Cards from './components/Cards';
-import BackgrounParallex from './components/BackgrounParallex';
+import './App.css';
+import CardItem from './components/CardItem';
+import BgGridVideo from './assets/videos/grid-loop.mp4';
+
+
+
 
 function App() {
   return (
@@ -11,15 +16,37 @@ function App() {
     <Router>
     <NavBar />
 
-    <BackgrounParallex />
+    <video id="bg-video" >
+      <source src={BgGridVideo} type="video/mp4" />
+    </video>
 
+    {/* <BackgroundParallex /> */}
+
+   
+
+  <section id="section-one">
+    <Cards
+      id='row0'
+      title='Row 0'
+    />
+  </section>
+
+  <section id="section-two">
+    <Cards 
+      id='row1'
+      title='Row 1'
+    />
+  </section>
+
+  
+  <section id="section-three">
     <Cards />
-    <Cards />
-    <Cards />
+  </section>
+  
     <Cards />
     
 
-    {/* This doesn't work and is unnecessary for this site because its one page, I think
+    {/* This doesn't work and is unnecessary for this site because its one page, I think? Not sure
     <Routes>
       <Route path='/' exact element={<Home />} />
     </Routes> 
