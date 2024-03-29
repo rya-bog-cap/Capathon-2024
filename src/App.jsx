@@ -1,11 +1,12 @@
-import NavBar from "./components/NavBar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
-import BackgroundParallex from "./components/BackgroundParallex";
-import Cards from "./components/Cards";
-import "./App.css";
-import CardItem from "./components/CardItem";
-import BgGridVideo from "./assets/videos/grid-loop.mp4";
+import NavBar from './components/NavBar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import BackgroundParallex from './components/BackgroundParallex';
+import CardItem from './components/CardItem';
+import Cards from './components/Cards';
+import ImageCaroussell from './components/ImageCaroussell';
+import './App.css';
+import BgGridVideo from './assets/videos/grid-loop.mp4';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         </section>
 
         <Cards />
+        <ImageCaroussell />
 
         {/* This doesn't work and is unnecessary for this site because its one page, I think? Not sure
     <Routes>
