@@ -1,14 +1,14 @@
-#root {
+:root {
   /* ============================== Not really sure if this is the best way.. But will do for now */
-  --black-synth:    #1b1e23;
-  --white-synth:    #f6eddb;
-  --peach-synth:    #ec8d75;
-  --coral-synth:    #bd4b64;
-  --fuchsia-synth:  #9e2281;
-  --indigo-synth:   #40265c;
-  --navy-synth:     #244584;
-  --blue-synth:     #50a9cf;
-  --aqua-synth:     #96e6c2;
+  --black-synth: #1b1e23;
+  --white-synth: #f6eddb;
+  --peach-synth: #ec8d75;
+  --coral-synth: #bd4b64;
+  --fuchsia-synth: #9e2281;
+  --indigo-synth: #40265c;
+  --navy-synth: #244584;
+  --blue-synth: #50a9cf;
+  --aqua-synth: #96e6c2;
 }
 
 * {
@@ -16,4 +16,58 @@
   margin: 0;
   padding: 0;
   font-family: 'Tilt Neon', sans-serif;
+}
+
+#section-one {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #9e2281;
+  opacity: 0.5;
+}
+
+#section-two {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #77229e;
+  opacity: 0.5;
+}
+
+#section-three {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #3d229e;
+  opacity: 0.5;
+}
+
+.animate-me {
+  animation: bounceIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
