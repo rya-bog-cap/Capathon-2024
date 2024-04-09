@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import "./navbar.css";
 
 function NavBar() {
+  useEffect(() => {
+    showButton();
+  }, []);
+
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -18,36 +22,18 @@ function NavBar() {
     }
   };
 
+  window.addEventListener("resize", showButton);
+
+  // Automatic scroll to section linked to nav buttons
   function scrollToSection(sectionId) {
     const scrollTarget = document.getElementById(sectionId);
-
-    //window.scrollTo(0, findPosition scrollTarget));
-
-    console.log(scrollTarget);
 
     scrollTarget?.scrollIntoView({
       behavior: "smooth",
     });
   }
 
-  function findPosition(obj) {
-    var currentTop = 0;
-    if (obj.offsetParent) {
-      do {
-        currentTop += obj.offsetTop;
-      } while ((obj = obj.offsetParent));
-      return [currentTop];
-    }
-  }
-
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener("resize", showButton);
-
   return (
-    <>
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
@@ -97,8 +83,7 @@ function NavBar() {
           {button && <Button buttonStyle="btn--outline">Sign Up</Button>}
         </div>
       </nav>
-    </>
-  );
+    );
 }
 
 export default NavBar;

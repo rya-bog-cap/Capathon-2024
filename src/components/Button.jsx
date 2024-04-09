@@ -1,4 +1,3 @@
-import React from "react";
 import "./button.css";
 import { Link } from "react-router-dom";
 
@@ -17,7 +16,7 @@ export const Button = ({
     : STYLES[0];
 
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
-  //yolo
+  
 
   return (
     <Link to="sign-up" className="btn-mobile">

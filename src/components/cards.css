@@ -1,37 +1,26 @@
 .cards {
   background: transparent;
   padding: 4rem;
-}
-
-h1 {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
 }
 
 h3 {
+  position: absolute;
   color: rgb(255, 60, 255);
   font-family: "Audiowide";
   font-size: 30px;
-  text-align: center;
 }
 
 #card-index0 {
-  left: -700px;
   position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
+  left: -700px;
 }
 
 #card-index1 {
-  left: 700px;
   position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
+  left: 700px;
 }
 
 .cards-container {
@@ -83,20 +72,6 @@ h3 {
   animation-name: fade-img;
   animation-duration: 2s;
 }
-
-/* .cards-item-pic-wrap::after {
-    content: attr(data-category);
-    position: absolute;
-    bottom: 0;
-    margin-left: 10px;
-    padding: 6px 8px;
-    max-width: calc((100%) - 60px);
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    background-color: #1f98f4;
-    box-sizing: border-box;
-  } */
 
 .cards-item-img {
   position: absolute;
