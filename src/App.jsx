@@ -5,7 +5,7 @@ import ImageCaroussell from './components/ImageCaroussell';
 import './App.css';
 import BgGridVideo from './assets/videos/grid-loop.mp4';
 import tomGif from './assets/videos/tomOutro.gif';
-import { Button } from './components/Button';
+// import { Button } from './components/Button';
 import Footer from './components/Footer';
 
 
