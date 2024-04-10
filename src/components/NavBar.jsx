@@ -80,7 +80,7 @@ function NavBar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">Sign Up</Button>}
+          {button && <Button onClick={() => scrollToSection("section-three")} buttonStyle="btn--outline">Sign Up</Button>}
         </div>
       </nav>
     );

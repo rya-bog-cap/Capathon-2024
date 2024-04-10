@@ -15,12 +15,14 @@ function Cards({id, title}) {
               src={image1}
               alt="Some buildings"
               text="Some cool text about this awesome image"
+              cardDirectionCSS={"cards-item-left"}
             />
             <CardItem
               id="card-index1"
               src={image2}
               alt="Some buildings"
               text="Some cool text about this awesome image"
+              cardDirectionCSS={"cards-item-right"}
             />
           </ul>
         </div>

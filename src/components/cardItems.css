@@ -1,0 +1,20 @@
+@keyframes scrollItemLeft {
+  0% { left: -100vw; }
+  20% { left: -100vw; }
+  50% { left: 0; }
+  100% { left: 0; }
+}
+  
+@keyframes scrollItemRight {
+  0% { left: 100vw; }
+  20% { left: 100vw; }
+  50% { left: 0; }
+  100% { left: 0; }
+}
+
+.cards-item-left {
+  animation-name: scrollItemLeft;
+}
+.cards-item-right {
+  animation-name: scrollItemRight;
+}
