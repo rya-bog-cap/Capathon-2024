@@ -1,15 +1,46 @@
-@keyframes scrollItemLeft {
-  0% { left: -100vw; }
-  20% { left: -100vw; }
-  50% { left: 0; }
-  100% { left: 0; }
+#card-hero {
+  position: relative;
 }
-  
+
+#card-index0 {
+  position: relative;
+  /* left: -700px; */
+}
+
+#card-index1 {
+  position: relative;
+  /* left: 700px; */
+}
+
+/*  Animation cards out of screen */
+@keyframes scrollItemLeft {
+  0% {
+    left: -100vw;
+  }
+  20% {
+    left: -100vw;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+
 @keyframes scrollItemRight {
-  0% { left: 100vw; }
-  20% { left: 100vw; }
-  50% { left: 0; }
-  100% { left: 0; }
+  0% {
+    left: 100vw;
+  }
+  20% {
+    left: 100vw;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 .cards-item-left {

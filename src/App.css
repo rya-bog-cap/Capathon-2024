@@ -18,7 +18,8 @@
   font-family: 'Tilt Neon', sans-serif;
 }
 
-html, body {
+html,
+body {
   animation-name: bg-gradient-anim;
   animation-duration: 1ms;
   animation-direction: alternate;
@@ -40,6 +41,7 @@ video {
 
 section {
   display: flex;
+  position: relative;
   justify-content: center;
   height: 100vh;
   scroll-margin-top: 80px;
@@ -47,7 +49,18 @@ section {
 }
 
 @keyframes bg-gradient-anim {
-  0% { background-color: #9e2281; }
-  50% { background-color: #77229e; }
-  100% { background-color: #3d229e; }
+  0% {
+    background-color: #9e2281;
+  }
+  50% {
+    background-color: #77229e;
+  }
+  100% {
+    background-color: #3d229e;
+  }
+}
+
+#card-hero img {
+  max-width: 199px;
+  image-rendering: pixelated;
 }
