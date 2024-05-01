@@ -1,29 +1,41 @@
 import { Button } from './Button';
 import './footer.css';
-import tomGif from '../assets/videos/tomOutro.gif';
+import tonGif from '../assets/videos/tomOutro.gif';
 
-function Footer({ title, description }) {
+function Footer({ title, description, link }) {
   return (
-    <div className="footer">
-      <div className="text-footer">
-        <h5>{title}</h5>
-        <p>{description}</p>
-      </div>
+    <>
+      <div className="footer">
+        <div className="text-footer">
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
 
-      <div className="signup-footer">
-        <Button
-          // onClick={handleClick}
-          to={
-            'https://docs.google.com/forms/d/e/1FAIpQLSeCpjksUmyXMKOFK9TZo3Sq4y_LxkAV5XzUKFrY_USzyTXLbg/viewform?usp=sf_link'
-          }
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
-        >
-          Sign Up
-        </Button>
-        <img src={tomGif} />
+        <div className="singup-footer">
+          <Button
+            // onClick={handleClick}
+            to={link}
+            buttonStyle="btn--primary"
+            buttonSize="btn--large"
+          >
+            Sign Up
+          </Button>
+          {/* <img src={tonGif} /> */}
+        </div>
       </div>
-    </div>
+      <div className="bottom-footer">
+        <p>Capathon 2024</p>
+      </div>
+    </>
+
+    // <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+    //   <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+    //     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    //     <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+    //       © 2024{''} Capathon
+    //     </span>
+    //   </div>
+    // </footer>
   );
 }
 

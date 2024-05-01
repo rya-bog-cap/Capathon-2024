@@ -1,21 +1,13 @@
-:root {
-  /* ============================== Not really sure if this is the best way.. But will do for now */
-  --black-synth: #1b1e23;
-  --white-synth: #f6eddb;
-  --peach-synth: #ec8d75;
-  --coral-synth: #bd4b64;
-  --fuchsia-synth: #9e2281;
-  --indigo-synth: #40265c;
-  --navy-synth: #244584;
-  --blue-synth: #50a9cf;
-  --aqua-synth: #96e6c2;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Tilt Neon', sans-serif;
+  color: #f2f2f2;
+  font-family: 'Syne', sans-serif;
 }
 
 html,
@@ -24,6 +16,27 @@ body {
   animation-duration: 1ms;
   animation-direction: alternate;
   animation-timeline: view(y);
+}
+
+h1 {
+  font-family: 'Audiowide', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+}
+
+h2 {
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;
+}
+
+p {
+  font-family: 'Fira Code', monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -43,24 +56,29 @@ section {
   display: flex;
   position: relative;
   justify-content: center;
+  align-items: center;
   height: 100vh;
   scroll-margin-top: 80px;
   text-align: center;
 }
 
-@keyframes bg-gradient-anim {
-  0% {
-    background-color: #9e2281;
-  }
-  50% {
-    background-color: #77229e;
-  }
-  100% {
-    background-color: #3d229e;
-  }
+#section-three {
+  display: inherit;
+  flex-direction: column;
 }
 
-#card-hero img {
-  max-width: 199px;
-  image-rendering: pixelated;
+.portrait-row {
+  /* max-height: 20vh; */
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes bg-gradient-anim {
+  0% {
+    background-color: #1e48b8;
+  }
+
+  100% {
+    background-color: #40265c;
+  }
 }

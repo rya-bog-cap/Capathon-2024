@@ -1,16 +1,22 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Cards from './components/Cards';
-import ImageCaroussell from './components/ImageCaroussell';
 import './App.css';
 import BgGridVideo from './assets/videos/grid-loop.mp4';
 import tomGif from './assets/videos/tomOutro.gif';
-// import { Button } from './components/Button';
+import CardHero from './components/CardHero';
+import CardCaroussell from './components/CardCaroussell';
+import CardText from './components/CardText';
+import CardPortrait from './components/CardPortrait';
 import Footer from './components/Footer';
-import CardItem from './components/CardItem';
 
-import image1 from './assets/images/img-1.jpg';
-import image2 from './assets/images/img-2.jpg';
+import portraitFalco from './assets/images/Falco.jpg';
+import portraitMaaike from './assets/images/Maaike.jpg';
+import portraitZouhair from './assets/images/Zouhair.jpg';
+import portraitRyan from './assets/images/Ryan0.jpg';
+import portraitMartin from './assets/images/Martin.jpg';
+import portraitNoa from './assets/images/Noa.jpg';
+
 import pixelCap from './assets/images/pixelCap.png';
 
 function App() {
@@ -23,43 +29,76 @@ function App() {
           <source src={BgGridVideo} type="video/mp4" />
         </video>
 
-        <section id="section-one">
-          <CardItem
-            id="card-hero"
-            src={pixelCap}
-            alt="Capathon pixel logo"
-            text="Capathon 2024"
-            description=""
-          />
+        <section id="section-one" className="flex items-center">
+          <CardHero />
         </section>
 
         <section id="section-two">
-          <CardItem
-            id="card-index0"
-            src={image1}
-            alt="Some buildings"
-            text="Some cool text about this awesome image"
-            cardDirectionCSS={'cards-item-left'}
-          />
-          <CardItem
-            id="card-index1"
-            src={image2}
-            alt="Some buildings"
-            text="Some cool text about this awesome image"
-            cardDirectionCSS={'cards-item-right'}
-          />
+          <h1>Past Events</h1>
+          <CardCaroussell id="card-index0" cardDirectionCSS={'cards-item-left'} />
+          <CardText cardDirectionCSS={'cards-item-right'} />
+        </section>
+
+        <section>
+          <CardText cardDirectionCSS={'cards-item-left'} />
+          <CardCaroussell id="card-index0" cardDirectionCSS={'cards-item-right'} />
         </section>
 
         <section id="section-three">
-          <Cards id="row1" title="Row 1" />
-        </section>
+          <h1>Organization</h1>
+          <div className="portrait-row">
+            <CardPortrait
+              cardDirectionCSS={'cards-item-left'}
+              src={portraitFalco}
+              alt={'Falco'}
+              text={'Falco de Beer'}
+            />
+            <CardPortrait
+              cardDirectionCSS={'cards-item-right'}
+              src={portraitMaaike}
+              alt={'Maaike'}
+              text={'Maaike Nijhuis'}
+            />
+          </div>
 
-        <ImageCaroussell />
+          <div className="portrait-row">
+            <CardPortrait
+              cardDirectionCSS={'cards-item-left'}
+              src={portraitZouhair}
+              alt={'Zouhair'}
+              text={'Zouhair El-Mariami'}
+            />
+            <CardPortrait
+              cardDirectionCSS={'cards-item-right'}
+              src={portraitRyan}
+              alt={'Ryan'}
+              text={'Ryan vd Bogaard'}
+            />
+          </div>
+
+          <div className="portrait-row">
+            <CardPortrait
+              cardDirectionCSS={'cards-item-left'}
+              src={portraitMartin}
+              alt={'Martin'}
+              text={'Martin Sabaka'}
+            />
+            <CardPortrait
+              cardDirectionCSS={'cards-item-right'}
+              src={portraitNoa}
+              alt={'Noa'}
+              text={'Noa van Bentem'}
+            />
+          </div>
+        </section>
 
         <section id="section-four">
           <Footer
             title="Getting excited?"
             description="Sign up and join the adventure of building the unknown!"
+            link={
+              'https://docs.google.com/forms/d/e/1FAIpQLSeCpjksUmyXMKOFK9TZo3Sq4y_LxkAV5XzUKFrY_USzyTXLbg/viewform?usp=sf_link'
+            }
           />
         </section>
       </Router>

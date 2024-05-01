@@ -1,34 +1,49 @@
 .footer {
   background-color: #1b1e23;
-  /* background-image: url('../assets/images/grid-sketchy.jpg'); */
-  background-size: 100vw;
-  margin: 0;
   width: 100%;
-  height: 50%;
-  color: aliceblue;
-  z-index: 5;
-  padding: 3rem;
+  height: 40vh;
+  /* padding: 3rem; */
   position: absolute;
   bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer h5 {
+/* .footer h5 {
   font-size: large;
   margin: 5px;
-}
+} */
 
 .text-footer {
-  background-color: indigo;
-  float: left;
   padding: 3rem;
+  margin-right: 20vw;
+  text-align: justify;
 }
 
-.signup-footer {
-  background-color: navy;
-  padding: 3rem;
+.text-footer h2 {
+  margin-bottom: 2rem;
 }
+
+/* .signup-footer {
+  padding: 3rem;
+} */
 
 .signup-footer img {
   max-width: 20vw;
   display: none;
+}
+
+.bottom-footer {
+  background-color: black;
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  bottom: 0;
+}
+
+.bottom-footer p {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 15px;
+  color: #244584;
 }
