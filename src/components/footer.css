@@ -37,13 +37,13 @@
 .bottom-footer {
   background-color: black;
   position: absolute;
-  padding: 10px;
+  padding: 0.8rem;
   width: 100%;
   bottom: 0;
 }
 
 .bottom-footer p {
   font-family: 'Audiowide', sans-serif;
-  font-size: 15px;
+  font-size: 1.2rem;
   color: #244584;
 }

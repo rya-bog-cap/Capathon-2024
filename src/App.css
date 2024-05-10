@@ -16,20 +16,21 @@ body {
   animation-duration: 1ms;
   animation-direction: alternate;
   animation-timeline: view(y);
+  font-size: 12px;
 }
 
 h1 {
   font-family: 'Audiowide', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 48px;
+  font-size: 3rem;
 }
 
 h2 {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 32px;
+  font-size: 2.5rem;
 }
 
 p {
@@ -58,7 +59,7 @@ section {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 6rem;
   text-align: center;
 }
 
