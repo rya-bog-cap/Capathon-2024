@@ -171,8 +171,8 @@
 /* ========================================================================================= */
 
 /* CARD PORTRAIT */
-.cards-portrait-size {
-  max-width: 15vw;
+.cards-portrait {
+  max-width: 12vw;
   margin: 1rem;
 }
 
@@ -206,8 +206,33 @@
 }
 
 .cards-portrait-text h2 {
+  
   font-size: 15px;
-  margin: 0.5rem;
+  margin: 1rem;
+}
+
+.cards-portrait-ani-row0L {
+  animation-name: scrollLeftPfRow0;
+}
+
+.cards-portrait-ani-row0R {
+  animation-name: scrollRightPfRow0;
+}
+
+.cards-portrait-ani-row1L {
+  animation-name: scrollLeftPfRow1;
+}
+
+.cards-portrait-ani-row1R {
+  animation-name: scrollRightPfRow1;
+}
+
+.cards-portrait-ani-row2L {
+  animation-name: scrollLeftPfRow2;
+}
+
+.cards-portrait-ani-row2R {
+  animation-name: scrollRightPfRow2;
 }
 
 /* ========================================================================================= */
@@ -272,5 +297,96 @@
   }
   100% {
     left: 0;
+  }
+}
+
+/*  Animation cards portraits rows */
+@keyframes scrollLeftPfRow0 {
+  0% {
+    left: -100vw;
+  }
+  10% {
+    left: -100vw;
+  }
+  25% {
+    left: -30vw;
+  }
+  100% {
+    left: -30vw;
+  }
+}
+
+@keyframes scrollRightPfRow0 {
+  0% {
+    left: 100vw;
+  }
+  10% {
+    left: 100vw;
+  }
+  25% {
+    left: 30vw;
+  }
+  100% {
+    left: 30vw;
+  }
+}
+
+@keyframes scrollLeftPfRow1 {
+  0% {
+    left: -100vw;
+  }
+  10% {
+    left: -100vw;
+  }
+  25% {
+    left: -16vw;
+  }
+  100% {
+    left: -16vw;
+  }
+}
+
+@keyframes scrollRightPfRow1 {
+  0% {
+    left: 100vw;
+  }
+  10% {
+    left: 100vw;
+  }
+  25% {
+    left: 16vw;
+  }
+  100% {
+    left: 16vw;
+  }
+}
+
+@keyframes scrollLeftPfRow2 {
+  0% {
+    left: -100vw;
+  }
+  10% {
+    left: -100vw;
+  }
+  25% {
+    left: -2vw;
+  }
+  100% {
+    left: -2vw;
+  }
+}
+
+@keyframes scrollRightPfRow2 {
+  0% {
+    left: 100vw;
+  }
+  10% {
+    left: 100vw;
+  }
+  25% {
+    left: 2vw;
+  }
+  100% {
+    left: 2vw;
   }
 }

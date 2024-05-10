@@ -7,7 +7,7 @@ function CardPortrait({ id, src, alt, text, description, cardDirectionCSS }) {
 
   return (
     <>
-      <li id={id} className={`cards-item cards-background cards-portrait-size ${cardDirectionCSS}`}>
+      <li id={id} className={`cards-item cards-background cards-portrait ${cardDirectionCSS}`}>
         <div className="cards-portrait-content-wrapper">
           <figure className="cards-portrait-pic-wrap">
             <img className="cards-portrait-img" src={src} alt={alt} />

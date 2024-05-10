@@ -34,7 +34,7 @@ function App() {
         </section>
 
         <section id="section-two">
-          <h1>Past Events</h1>
+          {/* <h1>Past Events</h1> */}
           <CardCaroussell id="card-index0" cardDirectionCSS={'cards-item-left'} />
           <CardText cardDirectionCSS={'cards-item-right'} />
         </section>
@@ -45,16 +45,17 @@ function App() {
         </section>
 
         <section id="section-three">
-          <h1>Organization</h1>
+          {/* <h1>Organization</h1> */}
           <div className="portrait-row">
             <CardPortrait
-              cardDirectionCSS={'cards-item-left'}
+              cardDirectionCSS={'cards-portrait-ani-row0L'}
               src={portraitFalco}
               alt={'Falco'}
               text={'Falco de Beer'}
             />
+
             <CardPortrait
-              cardDirectionCSS={'cards-item-right'}
+              cardDirectionCSS={'cards-portrait-ani-row0R'}
               src={portraitMaaike}
               alt={'Maaike'}
               text={'Maaike Nijhuis'}
@@ -63,13 +64,13 @@ function App() {
 
           <div className="portrait-row">
             <CardPortrait
-              cardDirectionCSS={'cards-item-left'}
+              cardDirectionCSS={'cards-portrait-ani-row1L'}
               src={portraitZouhair}
               alt={'Zouhair'}
               text={'Zouhair El-Mariami'}
             />
             <CardPortrait
-              cardDirectionCSS={'cards-item-right'}
+              cardDirectionCSS={'cards-portrait-ani-row1R'}
               src={portraitRyan}
               alt={'Ryan'}
               text={'Ryan vd Bogaard'}
@@ -78,13 +79,13 @@ function App() {
 
           <div className="portrait-row">
             <CardPortrait
-              cardDirectionCSS={'cards-item-left'}
+              cardDirectionCSS={'cards-portrait-ani-row2L'}
               src={portraitMartin}
               alt={'Martin'}
               text={'Martin Sabaka'}
             />
             <CardPortrait
-              cardDirectionCSS={'cards-item-right'}
+              cardDirectionCSS={'cards-portrait-ani-row2R'}
               src={portraitNoa}
               alt={'Noa'}
               text={'Noa van Bentem'}
