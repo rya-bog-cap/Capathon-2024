@@ -62,10 +62,10 @@ function NavBar() {
               Organization
             </Link>
           </li>
-          <li>
+          <li className="nav-item">
             <Link
               to="/"
-              className="nav-links-mobile"
+              className="nav-links nav-links-signup"
               onClick={() => scrollToSection('section-four')}
             >
               Sign up!

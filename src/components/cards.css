@@ -251,6 +251,7 @@
   animation-timeline: view(y);
 }
 
+/*
 @media only screen and (min-width: 1200px) {
   .content-blog-container {
     width: 84%;
@@ -267,7 +268,7 @@
   .cards-item {
     margin-bottom: 2rem;
   }
-}
+}*/
 
 /*  Animation cards out of screen */
 @keyframes scrollItemLeft {
