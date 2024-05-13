@@ -27,10 +27,10 @@ function CardHero({ id, src, alt, text, description, cardDirectionCSS }) {
               <p>To be revealed</p>
             </li>
             <li>
-              <p>25-26 09.2024</p>
+              <p>25-26 October 2024</p>
             </li>
             <li>
-              <p>Van der Valk hotel Blijdorp</p>
+              <p>Van der Valk hotel Blijdorp (Rotterdam) </p>
             </li>
           </ul>
         </div>

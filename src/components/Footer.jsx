@@ -11,21 +11,11 @@ function Footer({ title, description, link }) {
           <p>{description}</p>
         </div>
 
-        <div className="singup-footer">
-          <Button
-            // onClick={handleClick}
-            to={link}
-            buttonStyle="btn--primary"
-            buttonSize="btn--large"
-          >
-            Sign Up
-          </Button>
-          {/* <img src={tonGif} /> */}
-        </div>
+        <Button to={link} buttonStyle="btn--primary" buttonSize="btn--large">
+          Sign Up
+        </Button>
       </div>
-      <div className="bottom-footer">
-        <p>Capathon 2024</p>
-      </div>
+      <p className="bottom-footer">Capathon 2024</p>
     </>
 
     // <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">

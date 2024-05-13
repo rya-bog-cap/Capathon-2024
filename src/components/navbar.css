@@ -4,8 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Syne', sans-serif;
-  font-size: 1.2rem;
+  /* font-family: 'Syne', sans-serif; */
+  /* font-size: 1.2rem; */
   position: sticky;
   top: 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -14,8 +14,8 @@
 
 .navbar-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   /* height: 80px; */
 }
 .navbar-container a {
