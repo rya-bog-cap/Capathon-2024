@@ -11,7 +11,7 @@ import CardPortrait from './components/CardPortrait';
 import Footer from './components/Footer';
 
 import portraitFalco from './assets/images/Falco.jpg';
-import portraitMaaike from './assets/images/Maaike.jpg';
+import portraitMaaike from './assets/images/Maaike.jpeg';
 import portraitZouhair from './assets/images/Zouhair.jpg';
 import portraitRyan from './assets/images/Ryan0.jpg';
 import portraitMartin from './assets/images/Martin.jpg';
