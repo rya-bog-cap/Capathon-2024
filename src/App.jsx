@@ -58,24 +58,6 @@ const pastEvents = {
     year: '2022',
     text: "The 2022 content: I is not fat, i is fluffy spend all night ensuring people don't sleep sleep all day run at 3am and chill on the couch table yet hate dog, and reward the chosen human with a slow blink. Grass smells good haha you hold me hooman i scratch catty ipsum. Going to catch the red dot today going to catch the red dot today lick       meow at it i do a wiggle come here birdy step on your keyboard while you're gaming and then turn in a circle.",
   },
-  2021: {
-    images: [
-      {
-        original: './DSC00138.JPG',
-        thumbnail: './DSC00138.JPG',
-      },
-      {
-        original: './DSC00172.JPG',
-        thumbnail: './DSC00172.JPG',
-      },
-      {
-        original: './DSC01442.JPG',
-        thumbnail: './DSC01442.JPG',
-      },
-    ],
-    year: '2021',
-    text: "The 2021 content: I is not fat, i is fluffy spend all night ensuring people don't sleep sleep all day run at 3am and chill on the couch table yet hate dog, and reward the chosen human with a slow blink. Grass smells good haha you hold me hooman i scratch catty ipsum. Going to catch the red dot today going to catch the red dot today lick       meow at it i do a wiggle come here birdy step on your keyboard while you're gaming and then turn in a circle.",
-  },
 };
 
 function App() {
@@ -100,108 +82,100 @@ function App() {
     <>
       <Router>
         <NavBar />
+        <main>
+          <video id="bg-video">
+            <source src={BgGridVideo} type="video/mp4" />
+          </video>
 
-        <video id="bg-video">
-          <source src={BgGridVideo} type="video/mp4" />
-        </video>
+          <section id="section-one" className="flex items-center">
+            <CardHero />
+          </section>
 
-        <section id="section-one" className="flex items-center">
-          <CardHero />
-        </section>
-
-        <section id="section-two" className="flex flex-col gap-6">
-          <h1 className="">Past Events</h1>
-          <div className="flex gap-6">
-            <div className="w-3/5">
-              <CardCaroussell
-                id="card-index0"
-                cardDirectionCSS={'cards-item-left'}
-                images={selectedYear.images}
+          <section id="section-two" className="flex flex-col gap-6">
+            <h1 className="">Past Events</h1>
+            <div className="flex gap-6">
+              <div className="w-3/5">
+                <CardCaroussell
+                  id="card-index0"
+                  cardDirectionCSS={'cards-item-left'}
+                  images={selectedYear.images}
+                />
+              </div>
+              <CardText
+                cardDirectionCSS={'cards-item-right'}
+                year={selectedYear.year}
+                text={selectedYear.text}
               />
             </div>
-            <CardText
-              cardDirectionCSS={'cards-item-right'}
-              year={selectedYear.year}
-              text={selectedYear.text}
-            />
-          </div>
-          <div className="flex gap-2">
-            <Button
-              onClick={() => selectYear(2023)}
-              buttonStyle="btn-medium"
-              buttonSize="btn--medium"
-              isActive={selectedYear.year === '2023'}
-            >
-              2023
-            </Button>
-            <Button
-              onClick={() => selectYear(2022)}
-              buttonStyle="btn-medium"
-              buttonSize="btn--medium"
-              isActive={selectedYear.year === '2022'}
-            >
-              2022
-            </Button>
-            <Button
-              onClick={() => selectYear(2021)}
-              buttonStyle="btn-medium"
-              buttonSize="btn--medium"
-              isActive={selectedYear.year === '2021'}
-            >
-              2021
-            </Button>
-          </div>
-        </section>
+            <div className="flex gap-2">
+              <Button
+                onClick={() => selectYear(2023)}
+                buttonStyle="btn-medium"
+                buttonSize="btn--medium"
+                isActive={selectedYear.year === '2023'}
+              >
+                2023
+              </Button>
+              <Button
+                onClick={() => selectYear(2022)}
+                buttonStyle="btn-medium"
+                buttonSize="btn--medium"
+                isActive={selectedYear.year === '2022'}
+              >
+                2022
+              </Button>
+            </div>
+          </section>
 
-        <section id="section-three">
-          {/* <h1>Organization</h1> */}
-          <div className="portrait-row">
-            <CardPortrait
-              cardDirectionCSS={'cards-portrait-ani-row0L'}
-              src={portraitFalco}
-              alt={'Falco'}
-              text={'Falco de Beer'}
-            />
+          <section id="section-three">
+            {/* <h1>Organization</h1> */}
+            <div className="portrait-row">
+              <CardPortrait
+                cardDirectionCSS={'cards-portrait-ani-row0L'}
+                src={portraitFalco}
+                alt={'Falco'}
+                text={'Falco de Beer'}
+              />
 
-            <CardPortrait
-              cardDirectionCSS={'cards-portrait-ani-row0R'}
-              src={portraitMaaike}
-              alt={'Maaike'}
-              text={'Maaike Nijhuis'}
-            />
-          </div>
+              <CardPortrait
+                cardDirectionCSS={'cards-portrait-ani-row0R'}
+                src={portraitMaaike}
+                alt={'Maaike'}
+                text={'Maaike Nijhuis'}
+              />
+            </div>
 
-          <div className="portrait-row">
-            <CardPortrait
-              cardDirectionCSS={'cards-portrait-ani-row1L'}
-              src={portraitZouhair}
-              alt={'Zouhair'}
-              text={'Zouhair El-Mariami'}
-            />
-            <CardPortrait
-              cardDirectionCSS={'cards-portrait-ani-row1R'}
-              src={portraitRyan}
-              alt={'Ryan'}
-              text={'Ryan vd Bogaard'}
-            />
-          </div>
+            <div className="portrait-row">
+              <CardPortrait
+                cardDirectionCSS={'cards-portrait-ani-row1L'}
+                src={portraitZouhair}
+                alt={'Zouhair'}
+                text={'Zouhair El-Mariami'}
+              />
+              <CardPortrait
+                cardDirectionCSS={'cards-portrait-ani-row1R'}
+                src={portraitRyan}
+                alt={'Ryan'}
+                text={'Ryan vd Bogaard'}
+              />
+            </div>
 
-          <div className="portrait-row">
-            <CardPortrait
-              cardDirectionCSS={'cards-portrait-ani-row2L'}
-              src={portraitMartin}
-              alt={'Martin'}
-              text={'Martin Sabaka'}
-            />
-            <CardPortrait
-              cardDirectionCSS={'cards-portrait-ani-row2R'}
-              src={portraitNoa}
-              alt={'Noa'}
-              text={'Noa van Bentem'}
-            />
-          </div>
-        </section>
-
+            <div className="portrait-row">
+              <CardPortrait
+                cardDirectionCSS={'cards-portrait-ani-row2L'}
+                src={portraitMartin}
+                alt={'Martin'}
+                text={'Martin Sabaka'}
+              />
+              <CardPortrait
+                cardDirectionCSS={'cards-portrait-ani-row2R'}
+                src={portraitNoa}
+                alt={'Noa'}
+                text={'Noa van Bentem'}
+              />
+            </div>
+          </section>
+        </main>
         <section id="section-four">
           <Footer
             title="Getting excited?"
