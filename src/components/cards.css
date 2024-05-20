@@ -92,7 +92,7 @@
   position: relative;
   /* height: 55%; */
   flex: 1;
-  margin: 5rem;
+  margin: 3rem;
   border-radius: 0.8rem;
   animation-duration: 1ms;
   animation-direction: alternate;
@@ -206,7 +206,6 @@
 }
 
 .cards-portrait-text h2 {
-  
   font-size: 1.2rem;
   margin: 1rem;
 }

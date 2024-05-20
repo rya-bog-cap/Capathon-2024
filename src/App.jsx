@@ -25,43 +25,98 @@ const pastEvents = {
   2023: {
     images: [
       {
-        original: './DSC00138.JPG',
-        thumbnail: './DSC00138.JPG',
+        original: '2023/01.jpg',
       },
       {
-        original: './DSC00172.JPG',
-        thumbnail: './DSC00172.JPG',
+        original: '2023/02.jpg',
       },
       {
-        original: './DSC01442.JPG',
-        thumbnail: './DSC01442.JPG',
+        original: '2023/03.jpg',
+      },
+      {
+        original: '2023/04.jpg',
+      },
+      {
+        original: '2023/05.jpg',
+      },
+      {
+        original: '2023/06.jpg',
+      },
+      {
+        original: '2023/07.jpg',
+      },
+      {
+        original: '2023/08.jpg',
+      },
+      {
+        original: '2023/09.jpg',
+      },
+      {
+        original: '2023/10.jpg',
+      },
+      {
+        original: '2023/11.jpg',
+      },
+      {
+        original: '2023/12.jpg',
       },
     ],
     year: '2023',
-    text: "The 2023 content: I is not fat, i is fluffy spend all night ensuring people don't sleep sleep all day run at 3am and chill on the couch table yet hate dog, and reward the chosen human with a slow blink. Grass smells good haha you hold me hooman i scratch catty ipsum. Going to catch the red dot today going to catch the red dot today lick       meow at it i do a wiggle come here birdy step on your keyboard while you're gaming and then turn in a circle.",
+    text: 'This capathon Summer Edition took place on the 16th and 17th of June last year at the Postillon Hotel in Putten (Gelderland). The theme for this year was Health. 60 people of 8 different teams competed against eachother in the summer sweat of building their winning idea, all the while enjoying fun energizers such as tug of war and classic nerf gun battles! Team NoNameYet and Team Esther won the Jury and Judges prizes respectively with their winning pitches, that being the Itchiguana app which checks for potential food allergies and the SmartMirror which analyzes your health.',
   },
   2022: {
     images: [
       {
-        original: './DSC00138.JPG',
-        thumbnail: './DSC00138.JPG',
+        original: '2022/01.JPG',
       },
       {
-        original: './DSC00172.JPG',
-        thumbnail: './DSC00172.JPG',
+        original: '2022/02.JPG',
       },
       {
-        original: './DSC01442.JPG',
-        thumbnail: './DSC01442.JPG',
+        original: '2022/03.jpg',
+      },
+      {
+        original: '2022/04.jpg',
+      },
+      {
+        original: '2022/05.JPG',
+      },
+      {
+        original: '2022/06.JPG',
+      },
+      {
+        original: '2022/07.JPG',
+      },
+      {
+        original: '2022/08.JPG',
+      },
+      {
+        original: '2022/09.JPG',
+      },
+      {
+        original: '2022/10.JPG',
+      },
+      {
+        original: '2022/11.JPG',
+      },
+      {
+        original: '2022/12.JPG',
+      },
+      {
+        original: '2022/13.JPG',
       },
     ],
     year: '2022',
-    text: "The 2022 content: I is not fat, i is fluffy spend all night ensuring people don't sleep sleep all day run at 3am and chill on the couch table yet hate dog, and reward the chosen human with a slow blink. Grass smells good haha you hold me hooman i scratch catty ipsum. Going to catch the red dot today going to catch the red dot today lick       meow at it i do a wiggle come here birdy step on your keyboard while you're gaming and then turn in a circle.",
+    // Date/location (20, 21 & 22 oct, hotel zuiderduin -egmond aan zee)
+
+    // energizers (yoga, bowling, nerf guns)
+    // Winners
+    text: 'This capathon edition was held on 20, 21 and 22 October 2022 at Hotel Zuiderduin in Egmond aan Zee (Noord-Holland). This theme was all about sustainability. 80 people competed against eachother in teams of 5-8. We had fun energizers such as doing yoga, you could play bowling with your team, have nerf gun battles (although this was pretty much throughout the event) or enjoy walks on the beach with a nice autumn breeze. We had two winners! Each won the Jury and Audience votes respectively, Team Esther built an idea with a drone that checks for the bees idk lol....',
   },
 };
 
 function App() {
-  const [selectedYear, setSelectedYear] = useState(pastEvents['2023']);
+  const [selectedYear, setSelectedYear] = useState(pastEvents['2022']);
 
   function selectYear(num) {
     switch (num) {
@@ -109,20 +164,20 @@ function App() {
             </div>
             <div className="flex gap-2">
               <Button
-                onClick={() => selectYear(2023)}
-                buttonStyle="btn-medium"
-                buttonSize="btn--medium"
-                isActive={selectedYear.year === '2023'}
-              >
-                2023
-              </Button>
-              <Button
                 onClick={() => selectYear(2022)}
                 buttonStyle="btn-medium"
                 buttonSize="btn--medium"
                 isActive={selectedYear.year === '2022'}
               >
                 2022
+              </Button>
+              <Button
+                onClick={() => selectYear(2023)}
+                buttonStyle="btn-medium"
+                buttonSize="btn--medium"
+                isActive={selectedYear.year === '2023'}
+              >
+                2023
               </Button>
             </div>
           </section>

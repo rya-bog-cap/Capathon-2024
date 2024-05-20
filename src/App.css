@@ -81,6 +81,10 @@ section {
   justify-content: center;
 }
 
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  min-height: 366px !important;
+}
+
 @keyframes bg-gradient-anim {
   0% {
     background-color: #1e48b8;
