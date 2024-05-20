@@ -34,3 +34,7 @@
   color: #1b1e23;
   transition: all 0.3s ease-out;
 }
+
+.active-year {
+  background: white;
+}
