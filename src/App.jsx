@@ -62,7 +62,7 @@ const pastEvents = {
       },
     ],
     year: '2023',
-    text: 'This capathon Summer Edition took place on the 16th and 17th of June last year at the Postillon Hotel in Putten (Gelderland). The theme for this year was Health. 60 people of 8 different teams competed against eachother in the summer sweat of building their winning idea, all the while enjoying fun energizers such as tug of war and classic nerf gun battles! Team NoNameYet and Team Esther won the Jury and Judges prizes respectively with their winning pitches, that being the Itchiguana app which checks for potential food allergies and the SmartMirror which analyzes your health.',
+    text: 'This Capathon Summer Edition took place on the 16th and 17th of June last year at the Postillon Hotel in Putten (Gelderland). The theme for this year was Health. 60 people of 8 different teams competed against one another, in the mids of the summer heat, building their winning idea. All the while enjoying fun energizers such as tug of war and classic nerf gun battles! Team NoNameYet and Team Esther won the Jury and Judges prizes respectively with their winning pitches, that being; the "Itchiguana App", which checks for potential food allergies. And the "Mirror of Doom", which analyzes your health and current mood.',
   },
   2022: {
     images: [
@@ -111,7 +111,7 @@ const pastEvents = {
 
     // energizers (yoga, bowling, nerf guns)
     // Winners
-    text: 'This capathon edition was held on 20, 21 and 22 October 2022 at Hotel Zuiderduin in Egmond aan Zee (Noord-Holland). This theme was all about sustainability. 80 people competed against eachother in teams of 5-8. We had fun energizers such as doing yoga, you could play bowling with your team, have nerf gun battles (although this was pretty much throughout the event) or enjoy walks on the beach with a nice autumn breeze. We had two winners! Each won the Jury and Audience votes respectively, Team Esther built an idea with a drone that checks for the bees idk lol....',
+    text: 'This Capathon edition was held on 20th - 22nd of October 2022, at Hotel Zuiderduin in Egmond aan Zee (Noord-Holland). This theme was all about sustainability. 80 people competed against eachother in teams of 5-8. We had fun energizers such as doing yoga, you could play bowling with your team, have nerf gun battles (although this was pretty much throughout the event) or enjoy walks on the beach with a nice autumn breeze. We had two winners! Each won the Jury and Audience votes respectively. Team Esther built a concept utilising a drone, to check upon local population levels of bees in certain fields and plots. To aid in pollination of plants and visualising healing growth in number of bees...',
   },
 };
 
