@@ -186,6 +186,7 @@ function App() {
             <h1>Organization</h1>
             <div className="portrait-row">
               <CardPortrait
+                cardBackground={'cards-background-pink'}
                 cardDirectionCSS={'cards-portrait-ani-row0L'}
                 src={portraitFalco}
                 alt={'Falco'}
@@ -193,6 +194,7 @@ function App() {
               />
 
               <CardPortrait
+                cardBackground={'cards-background-pink'}
                 cardDirectionCSS={'cards-portrait-ani-row0R'}
                 src={portraitMaaike}
                 alt={'Maaike'}
@@ -202,12 +204,14 @@ function App() {
 
             <div className="portrait-row">
               <CardPortrait
+                cardBackground={'cards-background-purple'}
                 cardDirectionCSS={'cards-portrait-ani-row1L'}
                 src={portraitZouhair}
                 alt={'Zouhair'}
                 text={'Zouhair El-Mariami'}
               />
               <CardPortrait
+                cardBackground={'cards-background-purple'}
                 cardDirectionCSS={'cards-portrait-ani-row1R'}
                 src={portraitRyan}
                 alt={'Ryan'}
@@ -217,12 +221,14 @@ function App() {
 
             <div className="portrait-row">
               <CardPortrait
+                cardBackground={'cards-background-blue'}
                 cardDirectionCSS={'cards-portrait-ani-row2L'}
                 src={portraitMartin}
                 alt={'Martin'}
                 text={'Martin Sabaka'}
               />
               <CardPortrait
+                cardBackground={'cards-background-blue'}
                 cardDirectionCSS={'cards-portrait-ani-row2R'}
                 src={portraitNoa}
                 alt={'Noa'}

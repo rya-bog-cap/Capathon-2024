@@ -99,11 +99,27 @@
   animation-timeline: view(y);
 }
 
-.cards-background {
+.cards-background-blue {
   background-color: #1b1e23;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   border-bottom: 0.1rem solid #99fff5;
   box-shadow: 0 5px 30px #99fff580;
+  border-radius: 0.8rem;
+}
+
+.cards-background-purple {
+  background-color: #1b1e23;
+  /* opacity: 0.9; */
+  border-bottom: 0.1rem solid #9747ff;
+  box-shadow: 0 5px 30px #9747ff80;
+  border-radius: 0.8rem;
+}
+
+.cards-background-pink {
+  background-color: #1b1e23;
+  /* opacity: 0.9; */
+  border-bottom: 0.1rem solid #eb52d5;
+  box-shadow: 0 5px 30px #eb52d580;
   border-radius: 0.8rem;
 }
 
