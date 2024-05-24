@@ -1,7 +1,7 @@
 import ImageCaroussell from './ImageCaroussell';
 import './cards.css';
 
-function CardCaroussell({ id, src, alt, text, description, cardDirectionCSS }) {
+function CardCaroussell({ id, src, alt, text, description, cardDirectionCSS, images }) {
   return (
     <>
       <li id={id} className={`cards-item cards-background ${cardDirectionCSS}`}>
@@ -11,7 +11,7 @@ function CardCaroussell({ id, src, alt, text, description, cardDirectionCSS }) {
           </figure> */}
 
           <div className="card-caroussell">
-            <ImageCaroussell />
+            <ImageCaroussell images={images} />
           </div>
         </div>
       </li>
