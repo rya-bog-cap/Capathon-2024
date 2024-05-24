@@ -75,7 +75,15 @@
   color: #fff;
 }
 
-.nav-links-mobile {
+.nav-item {
+  display: block;
+}
+
+.nav-signup {
+  display: block;
+}
+
+.nav-signup-mobile {
   display: none;
 }
 
@@ -143,7 +151,11 @@
     font-size: 2rem;
   }
 
-  .nav-links-mobile {
+  .nav-signup {
+    display: none;
+  }
+
+  .nav-signup-mobile {
     display: block;
     text-align: center;
     margin: 2rem auto;
@@ -158,7 +170,7 @@
     transition: all 0.3s ease-out;
   }
 
-  .nav-links-mobile:hover {
+  .nav-signup-mobile:hover {
     background: #fff;
     color: #242424;
     transition: 250ms;

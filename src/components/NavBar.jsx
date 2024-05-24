@@ -62,12 +62,19 @@ function NavBar() {
               Organization
             </Link>
           </li>
+          <li>
+            <Link
+              to="/"
+              className="nav-signup-mobile"
+              onClick={() => scrollToSection('section-four')}
+            >
+              Sign up!
+            </Link>
+            <Link to="/" className="nav-links btn--outline nav-signup" onClick={() => scrollToSection('section-four')}>
+              Sign up!
+            </Link>
+          </li>
         </ul>
-        {button && (
-          <Button buttonStyle="btn--outline" onClick={() => scrollToSection('section-four')}>
-            Sign Up
-          </Button>
-        )}
       </div>
     </nav>
   );
