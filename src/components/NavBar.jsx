@@ -62,15 +62,6 @@ function NavBar() {
               Organization
             </Link>
           </li>
-          <li className="nav-item">
-            <Link
-              to="/"
-              className="nav-links nav-links-signup"
-              onClick={() => scrollToSection('section-four')}
-            >
-              Sign up!
-            </Link>
-          </li>
         </ul>
         {button && (
           <Button buttonStyle="btn--outline" onClick={() => scrollToSection('section-four')}>
@@ -79,32 +70,6 @@ function NavBar() {
         )}
       </div>
     </nav>
-
-    // <nav className="bg-slate-950 p-4">
-    //   <div className="container mx-auto">
-    //     <div className="flex justify-between items-center">
-    //       <div className="text-white font-bold text-xl">My Website</div>
-
-    //       <div className="hidden md:flex space-x-4">
-    //         <a href="#" className="text-white hover:text-pink-500">
-    //           Home
-    //         </a>
-
-    //         <a href="#" className="text-white hover:text-pink-500">
-    //           About
-    //         </a>
-
-    //         <a href="#" className="text-white hover:text-pink-500">
-    //           Services
-    //         </a>
-
-    //         <a href="#" className="text-white hover:text-pink-500">
-    //           Contact
-    //         </a>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </nav>
   );
 }
 

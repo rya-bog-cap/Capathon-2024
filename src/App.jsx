@@ -227,7 +227,7 @@ function App() {
           </section>
 
           <section id="section-three">
-            {/* <h1>Organization</h1> */}
+            <h1>Organization</h1>
             <div className="portrait-row">
               <CardPortrait
                 cardDirectionCSS={'cards-portrait-ani-row0L'}
