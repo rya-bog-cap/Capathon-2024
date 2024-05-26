@@ -10,7 +10,7 @@ function CardCaroussell({ id, src, alt, text, description, cardDirectionCSS, ima
             <img className="cards-item-img" src={src} alt={alt} />
           </figure> */}
 
-          <div className="card-caroussell">
+          <div className="card-caroussell cards-background-pink">
             <ImageCaroussell images={images} />
           </div>
         </div>
