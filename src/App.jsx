@@ -25,40 +25,40 @@ const pastEvents = {
   2023: {
     images: [
       {
-        original: '2023/01.jpg',
+        original: '2023/01-min.jpg',
       },
       {
-        original: '2023/02.jpg',
+        original: '2023/02-min.jpg',
       },
       {
-        original: '2023/03.jpg',
+        original: '2023/03-min.jpg',
       },
       {
-        original: '2023/04.jpg',
+        original: '2023/04-min.jpg',
       },
       {
-        original: '2023/05.jpg',
+        original: '2023/05-min.jpg',
       },
       {
-        original: '2023/06.jpg',
+        original: '2023/06-min.jpg',
       },
       {
-        original: '2023/07.jpg',
+        original: '2023/07-min.jpg',
       },
       {
-        original: '2023/08.jpg',
+        original: '2023/08-min.jpg',
       },
       {
-        original: '2023/09.jpg',
+        original: '2023/09-min.jpg',
       },
       {
-        original: '2023/10.jpg',
+        original: '2023/10-min.jpg',
       },
       {
-        original: '2023/11.jpg',
+        original: '2023/11-min.jpg',
       },
       {
-        original: '2023/12.jpg',
+        original: '2023/12-min.jpg',
       },
     ],
     year: '2023',
@@ -67,43 +67,43 @@ const pastEvents = {
   2022: {
     images: [
       {
-        original: '2022/01.JPG',
+        original: '2022/01-min.jpg',
       },
       {
-        original: '2022/02.JPG',
+        original: '2022/02-min.jpg',
       },
       {
-        original: '2022/03.jpg',
+        original: '2022/03-min.jpg',
       },
       {
-        original: '2022/04.jpg',
+        original: '2022/04-min.jpg',
       },
       {
-        original: '2022/05.JPG',
+        original: '2022/05-min.jpg',
       },
       {
-        original: '2022/06.JPG',
+        original: '2022/06-min.jpg',
       },
       {
-        original: '2022/07.JPG',
+        original: '2022/07-min.jpg',
       },
       {
-        original: '2022/08.JPG',
+        original: '2022/08-min.jpg',
       },
       {
-        original: '2022/09.JPG',
+        original: '2022/09-min.jpg',
       },
       {
-        original: '2022/10.JPG',
+        original: '2022/10-min.jpg',
       },
       {
-        original: '2022/11.JPG',
+        original: '2022/11-min.jpg',
       },
       {
-        original: '2022/12.JPG',
+        original: '2022/12-min.jpg',
       },
       {
-        original: '2022/13.JPG',
+        original: '2022/13-min.jpg',
       },
     ],
     year: '2022',
