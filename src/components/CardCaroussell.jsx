@@ -4,7 +4,7 @@ import './cards.css';
 function CardCaroussell({ id, src, alt, text, description, cardDirectionCSS, images }) {
   return (
     <>
-      <li id={id} className={`cards-item cards-background ${cardDirectionCSS}`}>
+      <li id={id} className={`cards-item ${cardDirectionCSS}`}>
         <div className="cards-item-link">
           {/* <figure className="cards-item-pic-wrap">
             <img className="cards-item-img" src={src} alt={alt} />

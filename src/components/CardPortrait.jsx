@@ -6,19 +6,17 @@ function CardPortrait({ id, src, alt, text, description, cardBackground, cardDir
   // const checkCardStyle = STYLES.includes(cardStyle) ? cardStyle : STYLES[0];
 
   return (
-    <>
-      <li id={id} className={`cards-item cards-portrait ${cardBackground} ${cardDirectionCSS}`}>
-        <div className="cards-portrait-content-wrapper">
-          <figure className="cards-portrait-pic-wrap">
-            <img className="cards-portrait-img" src={src} alt={alt} />
-          </figure>
-          <div className="cards-portrait-text">
-            <h2>{text}</h2>
-            <p>{description}</p>
-          </div>
+    <li id={id} className={`cards-item cards-portrait ${cardBackground} ${cardDirectionCSS}`}>
+      <div className="cards-portrait-content-wrapper">
+        <figure className="cards-portrait-pic-wrap">
+          <img className="cards-portrait-img" src={src} alt={alt} />
+        </figure>
+        <div className="cards-portrait-text">
+          <h2>{text}</h2>
+          <p>{description}</p>
         </div>
-      </li>
-    </>
+      </div>
+    </li>
   );
 }
 
