@@ -146,10 +146,15 @@ function App() {
             <CardHero />
           </section>
 
+          <section id="section-one-why" className="flex flex-col">
+            <h2>Why Join?</h2>
+            <article>Learn new or improve skill in a fun and challenging way. Connect with your company heros or complete strangers, to develop your team building skills and make something awesome together.</article>
+          </section>
+
           <section id="section-two" className="flex flex-col gap-6">
             <h1 className="">Past Events</h1>
-            <div className="flex gap-6">
-              <div className="w-3/5">
+            <div className="flex gap-6 flex-mobile-vert">
+              <div className="w-3/5 mobile-w-full">
                 <CardCaroussell
                   id="card-index0"
                   cardDirectionCSS={'cards-item-left'}

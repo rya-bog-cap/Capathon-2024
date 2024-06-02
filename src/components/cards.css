@@ -406,3 +406,11 @@
     left: 2vw;
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+
+  .card-content-text h2 {
+    text-align: center;
+  }
+}

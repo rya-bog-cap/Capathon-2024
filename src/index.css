@@ -70,3 +70,27 @@ button:focus-visible {
 }
 
 */
+
+article { 
+  text-shadow: 0.1rem 0.1rem black;
+    font-family: 'Fira Code', monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .gap-6 {
+    gap: 0;
+  }
+
+  .flex-mobile-vert { 
+    flex-direction: column;
+  }
+  
+  .mobile-w-full {
+    width: 100%;
+  }
+}
