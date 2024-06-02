@@ -43,6 +43,7 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 1.2rem;
 }
 
 body {
@@ -73,6 +74,14 @@ section {
 #section-three {
   display: inherit;
   flex-direction: column;
+}
+
+#section-three h1 {
+  transform: translate(0rem, 7rem);
+}
+
+#section-three p {
+  transform: translate(0rem, 9rem);
 }
 
 .portrait-row {

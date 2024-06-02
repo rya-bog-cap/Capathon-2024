@@ -155,6 +155,22 @@ function App() {
                   cardDirectionCSS={'cards-item-left'}
                   images={selectedYear.images}
                 />
+                <Button
+                  onClick={() => selectYear(2022)}
+                  buttonStyle="btn-medium"
+                  buttonSize="btn--large"
+                  isActive={selectedYear.year === '2022'}
+                >
+                  2022
+                </Button>
+                <Button
+                  onClick={() => selectYear(2023)}
+                  buttonStyle="btn-medium"
+                  buttonSize="btn--large"
+                  isActive={selectedYear.year === '2023'}
+                >
+                  2023
+                </Button>
               </div>
               <CardText
                 cardDirectionCSS={'cards-item-right'}
@@ -162,28 +178,14 @@ function App() {
                 text={selectedYear.text}
               />
             </div>
-            <div className="flex gap-2">
-              <Button
-                onClick={() => selectYear(2022)}
-                buttonStyle="btn-medium"
-                buttonSize="btn--medium"
-                isActive={selectedYear.year === '2022'}
-              >
-                2022
-              </Button>
-              <Button
-                onClick={() => selectYear(2023)}
-                buttonStyle="btn-medium"
-                buttonSize="btn--medium"
-                isActive={selectedYear.year === '2023'}
-              >
-                2023
-              </Button>
-            </div>
           </section>
 
           <section id="section-three">
             <h1>Organization</h1>
+            <p>
+              If you have any questions about the upcoming event feel free <br />
+              to contact anyone from this years organisation!
+            </p>
             <div className="portrait-row">
               <CardPortrait
                 cardBackground={'cards-background-pink'}
