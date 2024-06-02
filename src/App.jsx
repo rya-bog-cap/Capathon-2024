@@ -152,12 +152,12 @@ function App() {
 
           <section id="section-one" className="flex flex-col">
             <h1>Why Join?</h1>
-            <h2 className={classRandomWhyText}></h2>
-            <article>
-              Learn new or improve skill in a fun and challenging way. Connect with your company
-              heros or complete strangers, to develop your team building skills and make something
-              awesome together.
-            </article>
+            <h2 className={classRandomWhyText}>Hello World 1</h2>
+            <article>Learn 1</article>
+            <h2 className={classRandomWhyText}>Hello World 2</h2>
+            <article>Learn 2</article>
+            <h2 className={classRandomWhyText}>Hello World 3</h2>
+            <article>Learn 3</article>
           </section>
 
           <section id="section-two" className="flex flex-col gap-6">
@@ -197,7 +197,8 @@ function App() {
           <section id="section-three">
             <h1>Organization</h1>
             <article>
-              If you have any questions about the upcoming event feel free to contact anyone from this years organisation!
+              If you have any questions about the upcoming event feel free to contact anyone from
+              this years organisation!
             </article>
             <div className="portrait-row">
               <CardPortrait

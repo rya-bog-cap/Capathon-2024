@@ -80,7 +80,7 @@ section {
   transform: translate(0rem, 7rem);
 }
 
-#section-three p {
+#section-three article {
   transform: translate(0rem, 9rem);
 }
 
@@ -120,13 +120,12 @@ section {
   #section-three {
     margin-top: 4rem;
   }
-  
+
   #section-three h1 {
     transform: none;
   }
-  
-  #section-three p {
+
+  #section-three article {
     transform: none;
   }
-  
 }
