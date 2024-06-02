@@ -40,7 +40,6 @@ function NavBar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          {/* Capathon <i className="fa-solid fa-code"></i> */}
           <img src={logoName} />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
