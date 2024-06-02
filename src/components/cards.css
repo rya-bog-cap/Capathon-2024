@@ -407,6 +407,12 @@
   }
 }
 
+.capthon-details-table { 
+  table-layout: fixed;
+  width: 100%;
+  margin: 2rem;
+}
+
 
 @media only screen and (max-width: 768px) {
 
