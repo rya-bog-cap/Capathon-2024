@@ -6,6 +6,10 @@
   cursor: pointer;
 }
 
+.btn-mobile {
+  margin: 0 1rem;
+}
+
 .btn--primary {
   background-color: #99fff5;
   color: #1b1e23;

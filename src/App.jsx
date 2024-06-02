@@ -187,10 +187,9 @@ function App() {
 
           <section id="section-three">
             <h1>Organization</h1>
-            <p>
-              If you have any questions about the upcoming event feel free <br />
-              to contact anyone from this years organisation!
-            </p>
+            <article>
+              If you have any questions about the upcoming event feel free to contact anyone from this years organisation!
+            </article>
             <div className="portrait-row">
               <CardPortrait
                 cardBackground={'cards-background-pink'}

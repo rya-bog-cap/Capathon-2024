@@ -413,4 +413,17 @@
   .card-content-text h2 {
     text-align: center;
   }
+
+  .cards-portrait {
+    max-width: 40vw;
+  }
+
+  .cards-portrait-ani-row0L,
+  .cards-portrait-ani-row0R,
+  .cards-portrait-ani-row1L,
+  .cards-portrait-ani-row1R,
+  .cards-portrait-ani-row2L,
+  .cards-portrait-ani-row2R {
+    animation-name: none;
+  }
 }
