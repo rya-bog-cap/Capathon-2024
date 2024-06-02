@@ -1,6 +1,5 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import Cards from './components/Cards';
 import './App.css';
 import { useState } from 'react';
 import BgGridVideo from './assets/videos/grid-loop.mp4';
@@ -18,8 +17,6 @@ import portraitRyan from './assets/images/Ryan0.jpg';
 import portraitMartin from './assets/images/Martin.jpg';
 import portraitNoa from './assets/images/Noa.jpg';
 import { Button } from './components/Button';
-
-import pixelCap from './assets/images/pixelCap.png';
 
 const pastEvents = {
   2023: {
@@ -115,6 +112,13 @@ const pastEvents = {
   },
 };
 
+const optionalTextWhyColorOptions = ['textWhyBlue', 'textWhyPurple', 'textWhyPink'];
+
+function genRandomWhyText(max) {
+  return Math.floor(Math.random() * (max + 1));
+}
+const classRandomWhyText = optionalTextWhyColorOptions[genRandomWhyText(3)];
+
 function App() {
   const [selectedYear, setSelectedYear] = useState(pastEvents['2022']);
 
@@ -142,13 +146,18 @@ function App() {
             <source src={BgGridVideo} type="video/mp4" />
           </video>
 
-          <section id="section-one" className="flex items-center">
+          <section id="section-zero" className="flex items-center">
             <CardHero />
           </section>
 
-          <section id="section-one-why" className="flex flex-col">
-            <h2>Why Join?</h2>
-            <article>Learn new or improve skill in a fun and challenging way. Connect with your company heros or complete strangers, to develop your team building skills and make something awesome together.</article>
+          <section id="section-one" className="flex flex-col">
+            <h1>Why Join?</h1>
+            <h2 className={classRandomWhyText}></h2>
+            <article>
+              Learn new or improve skill in a fun and challenging way. Connect with your company
+              heros or complete strangers, to develop your team building skills and make something
+              awesome together.
+            </article>
           </section>
 
           <section id="section-two" className="flex flex-col gap-6">
