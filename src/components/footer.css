@@ -16,8 +16,8 @@
 } */
 
 .text-footer {
-  padding: 3rem;
-  margin-right: 20vw;
+  /* padding: 3rem; */
+  margin-right: 10vw;
   text-align: justify;
 }
 
@@ -49,7 +49,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-
   .footer {
     flex-direction: column;
     text-align: center;

@@ -94,6 +94,43 @@ section {
   min-height: 366px !important;
 }
 
+.textWhyBlue {
+  /* background-color: #1b1e23; */
+  /* opacity: 0.9; */
+  /* border-bottom: 0.1rem solid #99fff5; */
+  /* text-shadow: 0 5px 30px #99fff580; */
+  text-shadow:
+    0 0.2rem 0.2rem #99fff580,
+    0 -0.2rem 0.2rem #99fff580,
+    0.2rem 0 0.2rem #99fff580,
+    0.2rem 0 0.2rem #99fff580;
+  /* border-radius: 0.8rem; */
+}
+
+.textWhyPurple {
+  /* background-color: #1b1e23; */
+  /* opacity: 0.9; */
+  /* border-bottom: 0.1rem solid #9747ff; */
+  text-shadow:
+    0 0.2rem 0.2rem #9747ff90,
+    0 -0.2rem 0.2rem #9747ff90,
+    0.2rem 0 0.2rem #9747ff90,
+    0.2rem 0 0.2rem #9747ff90;
+  /* border-radius: 0.8rem; */
+}
+
+.textWhyPink {
+  /* background-color: #1b1e23; */
+  /* opacity: 0.9; */
+  /* border-bottom: 0.1rem solid #eb52d5; */
+  text-shadow:
+    0 0.2rem 0.2rem #eb52d580,
+    0 -0.2rem 0.2rem #eb52d580,
+    0.2rem 0 0.2rem #eb52d580,
+    0.2rem 0 0.2rem #eb52d580;
+  /* border-radius: 0.8rem; */
+}
+
 @keyframes bg-gradient-anim {
   0% {
     background-color: #1e48b8;

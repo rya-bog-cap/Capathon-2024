@@ -17,6 +17,7 @@ function Footer({ title, description, link }) {
             to={link}
             buttonStyle="btn--primary"
             buttonSize="btn--large"
+            elemStyle={{ 'font-size': '2.5rem' }}
           >
             Sign Up
           </Button>

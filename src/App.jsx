@@ -113,11 +113,7 @@ const pastEvents = {
 };
 
 const optionalTextWhyColorOptions = ['textWhyBlue', 'textWhyPurple', 'textWhyPink'];
-
-function genRandomWhyText(max) {
-  return Math.floor(Math.random() * (max + 1));
-}
-const classRandomWhyText = optionalTextWhyColorOptions[genRandomWhyText(3)];
+optionalTextWhyColorOptions.sort(() => 0.5 - Math.random());
 
 function App() {
   const [selectedYear, setSelectedYear] = useState(pastEvents['2022']);
@@ -152,12 +148,11 @@ function App() {
 
           <section id="section-one" className="flex flex-col">
             <h1>Why Join?</h1>
-            <h2 className={classRandomWhyText}>Hello World 1</h2>
-            <article>Learn 1</article>
-            <h2 className={classRandomWhyText}>Hello World 2</h2>
-            <article>Learn 2</article>
-            <h2 className={classRandomWhyText}>Hello World 3</h2>
-            <article>Learn 3</article>
+            <h2 className={optionalTextWhyColorOptions[0]}>Learning new things</h2>
+
+            <h2 className={optionalTextWhyColorOptions[1]}>Fun</h2>
+
+            <h2 className={optionalTextWhyColorOptions[2]}>Connecting to like-minded people</h2>
           </section>
 
           <section id="section-two" className="flex flex-col gap-6">
@@ -196,7 +191,8 @@ function App() {
 
           <section id="section-three">
             <h1>Organization</h1>
-            <article>
+            {/* max-width: 60vw; margin: auto; */}
+            <article style={{ 'max-width': '60vw', margin: 'auto' }}>
               If you have any questions about the upcoming event feel free to contact anyone from
               this years organisation!
             </article>
