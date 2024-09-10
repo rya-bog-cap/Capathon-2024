@@ -1,73 +1,168 @@
-:root {
-  /* ============================== Not really sure if this is the best way.. But will do for now */
-  --black-synth: #1b1e23;
-  --white-synth: #f6eddb;
-  --peach-synth: #ec8d75;
-  --coral-synth: #bd4b64;
-  --fuchsia-synth: #9e2281;
-  --indigo-synth: #40265c;
-  --navy-synth: #244584;
-  --blue-synth: #50a9cf;
-  --aqua-synth: #96e6c2;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Tilt Neon', sans-serif;
+  color: #f2f2f2;
+  font-family: 'Syne', sans-serif;
 }
 
-#section-one {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  background-color: #9e2281;
-  opacity: 0.5;
+html,
+body {
+  animation-name: bg-gradient-anim;
+  animation-duration: 1ms;
+  animation-direction: alternate;
+  animation-timeline: view(y);
+  font-size: 12px;
 }
 
-#section-two {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  background-color: #77229e;
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Audiowide', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+h2 {
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: 'Fira Code', monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 0;
   opacity: 0.5;
+  top: 0;
+  left: 0;
+}
+
+section {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  scroll-margin-top: 6rem;
+  text-align: center;
 }
 
 #section-three {
+  display: inherit;
+  flex-direction: column;
+}
+
+#section-three h1 {
+  transform: translate(0rem, 7rem);
+}
+
+#section-three article {
+  transform: translate(0rem, 9rem);
+}
+
+.portrait-row {
+  /* max-height: 20vh; */
   display: flex;
   justify-content: center;
-  height: 100vh;
-  text-align: center;
-  background-color: #3d229e;
-  opacity: 0.5;
 }
 
-.animate-me {
-  animation: bounceIn 3s ease-in-out;
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  min-height: 366px !important;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.textWhyBlue {
+  /* background-color: #1b1e23; */
+  /* opacity: 0.9; */
+  /* border-bottom: 0.1rem solid #99fff5; */
+  /* text-shadow: 0 5px 30px #99fff580; */
+  text-shadow:
+    0 0.2rem 0.2rem #99fff580,
+    0 -0.2rem 0.2rem #99fff580,
+    0.2rem 0 0.2rem #99fff580,
+    0.2rem 0 0.2rem #99fff580;
+  /* border-radius: 0.8rem; */
 }
 
-@keyframes bounceIn {
+.textWhyPurple {
+  /* background-color: #1b1e23; */
+  /* opacity: 0.9; */
+  /* border-bottom: 0.1rem solid #9747ff; */
+  text-shadow:
+    0 0.2rem 0.2rem #9747ff90,
+    0 -0.2rem 0.2rem #9747ff90,
+    0.2rem 0 0.2rem #9747ff90,
+    0.2rem 0 0.2rem #9747ff90;
+  /* border-radius: 0.8rem; */
+}
+
+.textWhyPink {
+  /* background-color: #1b1e23; */
+  /* opacity: 0.9; */
+  /* border-bottom: 0.1rem solid #eb52d5; */
+  text-shadow:
+    0 0.2rem 0.2rem #eb52d580,
+    0 -0.2rem 0.2rem #eb52d580,
+    0.2rem 0 0.2rem #eb52d580,
+    0.2rem 0 0.2rem #eb52d580;
+  /* border-radius: 0.8rem; */
+}
+
+@keyframes bg-gradient-anim {
   0% {
-    transform: scale(0.1);
-    opacity: 0;
+    background-color: #1e48b8;
   }
-  60% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
+
   100% {
-    transform: scale(1);
+    background-color: #40265c;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body,
+  html {
+    font-size: 10px;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  section {
+    min-height: 60vh;
+  }
+
+  #section-three {
+    margin-top: 4rem;
+  }
+
+  #section-three h1 {
+    transform: none;
+  }
+
+  #section-three article {
+    transform: none;
   }
 }

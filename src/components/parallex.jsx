@@ -1,30 +1,35 @@
-window.addEventListener("scroll", function () {
-  const distance = window.scrollY;
-
-  let vid = document.getElementById("bg-video");
-
-  //console.log(distance);
-  // document.querySelector(".testDiv1").style.transform = `translateX(${distance *-2}px)`
-  // document.querySelector(".testDiv2").style.transform = `translateX(${distance * 2}px)`
-
-  //document.querySelector(".testDivV").style.transform = `translateY(${distance * 2}px)`
-
+this.vidTimeDelay = true;
+window.addEventListener('scroll', function () {
+  const vid = document.getElementById('bg-video'); 
   vid.pause();
 
-  this.window.onscroll = function () {
-    vid.pause();
-  };
+  const scrollMultiplier = 0.2;
 
-  this.setInterval(function () {
-    vid.currentTime = window.scrollY / 1000;
-  }, 100);
+  if(this.vidTimeDelay){
+    var currTime = 
+      (
+        //document.documentElement.scrollTop *
+        (window.scrollY * 
+        scrollMultiplier) /
+        240
+      )
+    ;
+    if(currTime < 0)
+      currTime = 0.01;
+    if(currTime > vid.duration)
+      currTime %= vid.duration;
+    if(isNaN(currTime) || !isFinite(currTime))
+      currTime = 0.0;
+    console.log(`ct:${currTime} | vt:${vid.currentTime}`);
+    
+    vid.currentTime = currTime;
+    this.vidTimeDelay = false;
+    this.setTimeout(() => { this.vidTimeDelay = true; }, 100);
+  }
 
-  document.getElementById("card-index0").style.transform =
-    `translateX(${distance * 2}px)`;
-  document.getElementById("card-index1").style.transform =
-    `translateX(${distance * -2}px)`;
+  //}, 200);
 
-  setTimeout(() => {
-    document.querySelector("h3").classList.add("animate-me");
-  }, 400);
+  // setTimeout(() => {
+  //   document.querySelector("h3").classList.add("animated-title");
+  // }, 400);
 });

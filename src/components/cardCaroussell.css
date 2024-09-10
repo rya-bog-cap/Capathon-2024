@@ -1,0 +1,20 @@
+.cards-item {
+  background-color: #1b1e23;
+  opacity: 0.9;
+  display: flex;
+  flex: 1;
+  margin: 5rem;
+  border-radius: 0.8rem;
+}
+
+.cards-item-link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 0.1rem solid #99fff5;
+  box-shadow: 0 0.25rem 5rem #99fff580;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  text-decoration: none;
+}
+

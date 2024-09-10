@@ -1,21 +1,16 @@
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 
-const images = [
-  {
-    original: 'https://picsum.photos/id/1018/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
-  },
-  {
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/',
-  },
-  {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/',
-  },
-];
-
-export default function ImageCaroussell() {
-  return <ImageGallery items={images} />;
+export default function ImageCaroussell({ images }) {
+  return (
+    <ImageGallery
+      items={images}
+      lazyLoad={true}
+      flickThreshold={4}
+      showPlayButton={false}
+      showBullets={true}
+      showThumbnails={false}
+      disableThumbnailScroll={true}
+    />
+  );
 }
