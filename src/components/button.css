@@ -13,6 +13,7 @@
 .btn--primary {
   background-color: #edaee4;
   color: #000;
+  border: 2px solid #eb52d5;
   box-shadow: 0 0 1rem #eb52d5;
 }
 
@@ -36,6 +37,7 @@
 .btn--large:hover {
   background: white;
   border: 2px solid #99fff5;
+  box-shadow: 0 0 1rem #99fff5;
   color: #1b1e23;
   transition: all 0.3s ease-out;
 }

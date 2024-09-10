@@ -112,6 +112,8 @@ const pastEvents = {
   },
 };
 
+const formLink = 'https://docs.google.com/forms/d/e/1FAIpQLSeCpjksUmyXMKOFK9TZo3Sq4y_LxkAV5XzUKFrY_USzyTXLbg/viewform?usp=sf_link';
+
 const optionalTextWhyColorOptions = ['textWhyBlue', 'textWhyPurple', 'textWhyPink'];
 optionalTextWhyColorOptions.sort(() => 0.5 - Math.random());
 
@@ -143,7 +145,11 @@ function App() {
           </video>
 
           <section id="section-zero" className="flex items-center">
-            <CardHero />
+            <CardHero 
+              link={
+                formLink
+              }
+            />
           </section>
 
           <section id="section-one" className="flex flex-col">
@@ -248,13 +254,65 @@ function App() {
               />
             </div>
           </section>
+
+          <section id="section-faq" className="flex flex-col">
+            <h1>F.A.Q.</h1>
+            <div>
+              <ul className="faq">
+                <li className="faq-main-question">
+                  <span>I have registered but haven't received a confirmation e-mail yet?</span> <br/>
+                  Our registration form service won't mail a confirmation, it will only confirm registration in the browser tab. Also, we will send out an e-mail to everyone once the registration period closes. We adhere to a "first come first serve" policy, so register as soon as possible. 
+                </li>
+                <li className="faq-main-question">
+                  <span>I have registered but I want to cancel, what now?</span> <br/>
+                  (this counts for both solo entries and teams, please explain your situation when you want to unregister one or multiple team-members) <br/>
+                  Owners of team registrations should be able to alter their entries, if they used a Google account to register or still have a active browser session.
+                  <ul>
+                    <li className="faq-followup-question">
+                      <span>Canceling before registrations close:</span> <br/>
+                      Send a message to one of the capathon members or mail <a href="mailto: capathonfs.bnl@capgemini.com" className="pill">capathonfs.bnl@capgemini.com</a>.
+                    </li>
+                    <li className="faq-followup-question">
+                      <span>Canceling after registrations close:</span> <br/>
+                      Send a message A.S.A.P. to one of the capathon members or mail <a href="mailto: capathonfs.bnl@capgemini.com" className="pill">capathonfs.bnl@capgemini.com</a>, please add a valid reason for cancelation.
+                    </li>
+                    <li className="faq-followup-question">
+                      <span>Changing registration as a team:</span> <br/>
+                      If the creator of the team entry decides to leave and cannot alter the registration.
+                      Send a message to one of the capathon members or mail <a href="mailto: capathonfs.bnl@capgemini.com" className="pill">capathonfs.bnl@capgemini.com</a>, please explain who will stay and who will leave.
+                    </li>
+                  </ul>
+                </li>
+                <li className="faq-main-question">
+                  <span>Do I need to be a developer to join?</span> <br/>
+                  No! All roles are welcome here, it's safe place to learn new skills or grow your existing ones. All we ask of you is to create a product. There are plenty of code free or blueprint based solutions as alternatives. Pairing solo entries, we will try to foster a good balance. <br/>
+                  <span>THE GOAL IS NOT TO JUST PRESENT A PRESENTATION!</span>
+                </li>
+                <li className="faq-main-question">
+                  <span>I registered solo, what now?</span> <br/>
+                  Solo entries will be paired with a team after the registration period ends. A team can made up out of multiple solo entries or smaller teams that didn't yet hit the five person limit.
+                  <ul>
+                    <li className="faq-followup-question">
+                      <span>I found a team!</span> <br/>
+                      That is great news! Try to see if you can alter your own entry and change it from solo to team. Or, if your newly found team already had a entry, see if they can add you.
+                      If any issue occurs send a message to one of the capathon members or mail <a href="mailto: capathonfs.bnl@capgemini.com" className="pill">capathonfs.bnl@capgemini.com</a>, we will see if we can update the information from our side.
+                    </li>
+                  </ul>
+                </li>
+                <li className="faq-main-question">
+                  <span>I registered as a team, what now?</span> <br/>
+                  A team is limited up to 5 members. You are not required to have 5 members, but keep in mind that we (the organisation) could pair you up with some solo entries.
+                </li>
+              </ul>
+            </div>
+          </section>
         </main>
         <section id="section-four">
           <Footer
             title="Getting excited?"
             description="Sign up and join the adventure of building the unknown!"
             link={
-              'https://docs.google.com/forms/d/e/1FAIpQLSeCpjksUmyXMKOFK9TZo3Sq4y_LxkAV5XzUKFrY_USzyTXLbg/viewform?usp=sf_link'
+              formLink
             }
           />
         </section>

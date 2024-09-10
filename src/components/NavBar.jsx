@@ -61,6 +61,11 @@ function NavBar() {
               Organization
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to="/" className="nav-links" onClick={() => scrollToSection('section-faq')}>
+              FAQ
+            </Link>
+          </li>
           <li>
             <Link
               to="/"

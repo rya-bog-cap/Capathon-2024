@@ -87,6 +87,11 @@
   line-height: 24px;
 } */
 
+.card-hero-spacing {
+  flex-direction: column;
+  padding: 2rem 0.5rem;
+}
+
 .cards-item {
   display: flex;
   position: relative;
@@ -163,6 +168,21 @@
 
 .card-description p {
   margin: 3rem;
+}
+
+.timer { 
+  display: inline-flex;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  flex-flow: row;
+  gap: 1rem;
+}
+
+.timer-column {
+  display: flex;
+  flex-direction: column;
 }
 
 /* ========================================================================================= */
@@ -410,9 +430,10 @@
 .capthon-details-table { 
   table-layout: fixed;
   width: 100%;
-  margin: 2rem;
 }
-
+.capthon-details-table > tr > td {
+  padding-bottom: 1rem;
+}
 
 @media only screen and (max-width: 768px) {
 
