@@ -12,16 +12,26 @@ function CardHero({ id, src, alt, text, description, cardDirectionCSS, link }) {
     seconds: 0
   })
   const [canEnter, setCanEnter] = React.useState(true)
+  const [canSignUp, setCanSignUp] = React.useState(true)
 
   // Set the date we're counting down to
-  //let countDownDate = new Date(1729846800000  - new Date(1729846800000).getTimezoneOffset() * 60 * 1000).getTime();
-  let countDownDate = new Date(1725992160000  - new Date(1725992160000).getTimezoneOffset() * 60 * 1000).getTime();
+  let countDownEventStartDate = new Date(1729846800000  - new Date(1729846800000).getTimezoneOffset() * 60 * 1000).getTime();
+  let countDownSignUpDate = new Date(1729076400000  - new Date(1729076400000).getTimezoneOffset() * 60 * 1000).getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function() {
 
     // Get today's date and time
     var now = new Date().getTime();
+
+    let countDownDate = 0;
+    //check if date is within signup
+    if(countDownSignUpDate - now > 0 && canSignUp) {
+      countDownDate = countDownSignUpDate;
+    } else {
+      setCanSignUp(false);
+      countDownDate = countDownEventStartDate;
+    }
 
     // Find the distance between now and the count down date
     var distance = countDownDate - now;
@@ -42,7 +52,7 @@ function CardHero({ id, src, alt, text, description, cardDirectionCSS, link }) {
     })
 
     // If the count down is finished, write some text
-    if (distance < 0) {
+    if (distance < 0 && !canSignUp) {
       clearInterval(x);
       setCanEnter(false);
     }
@@ -56,7 +66,7 @@ function CardHero({ id, src, alt, text, description, cardDirectionCSS, link }) {
           <table className="capthon-details-table">
             <tr>
               <td><h2>Theme</h2></td>
-              <td><p>To be revealed</p></td>
+              <td><p>To be revealed on the 16th of October</p></td>
             </tr>
             <tr>
               <td><h2>Date</h2></td>
@@ -72,7 +82,7 @@ function CardHero({ id, src, alt, text, description, cardDirectionCSS, link }) {
             canEnter?
               <div>
                 <div className="timer">
-                  Event starts in
+                  {canSignUp? "Sign up closes in" : "Event starts in"}
                   <span className="timer-column">
                     <span>{timeLeft.days}</span>
                     <span>days</span>
@@ -90,6 +100,7 @@ function CardHero({ id, src, alt, text, description, cardDirectionCSS, link }) {
                     <span>seconds</span>
                   </span>
                 </div>
+                {canSignUp?
                 <Button
                   // onClick={handleClick}
                   to={link}
@@ -98,7 +109,7 @@ function CardHero({ id, src, alt, text, description, cardDirectionCSS, link }) {
                   elemStyle={{ 'font-size': '2.5rem' }}
                 >
                   Sign Up
-                </Button>
+                </Button>:<></>}
               </div>
             :
               <div>The event has started already, see you next year!</div>

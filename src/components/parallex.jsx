@@ -20,7 +20,7 @@ window.addEventListener('scroll', function () {
       currTime %= vid.duration;
     if(isNaN(currTime) || !isFinite(currTime))
       currTime = 0.0;
-    console.log(`ct:${currTime} | vt:${vid.currentTime}`);
+    // console.log(`ct:${currTime} | vt:${vid.currentTime}`);
     
     vid.currentTime = currTime;
     this.vidTimeDelay = false;
