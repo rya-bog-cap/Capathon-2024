@@ -19,6 +19,66 @@ import portraitNoa from './assets/images/Noa.jpg';
 import { Button } from './components/Button';
 
 const pastEvents = {
+  2024: {
+    images: [
+      {
+        original: '2024/01-min.jpg',
+      },
+      {
+        original: '2024/02.jpg',
+      },
+      {
+        original: '2024/03.jpg',
+      },
+      {
+        original: '2024/04.jpg',
+      },
+      {
+        original: '2024/05.JPG',
+      },
+      {
+        original: '2024/06.jpg',
+      },
+      {
+        original: '2024/07.jpg',
+      },
+      {
+        original: '2024/08.jpg',
+      },
+      {
+        original: '2024/09.jpg',
+      },
+      {
+        original: '2024/10.jpg',
+      },
+      {
+        original: '2024/11.jpg',
+      },
+      {
+        original: '2024/12.jpg',
+      },
+      {
+        original: '2024/13.jpg',
+      },
+      {
+        original: '2024/14.jpg',
+      },
+      {
+        original: '2024/15.jpg',
+      },
+      {
+        original: '2024/16.jpg',
+      },
+      {
+        original: '2024/17.jpg',
+      },
+      {
+        original: '2024/18.jpg',
+      },
+    ],
+    year: '2024',
+    text: 'This Capathon took place on the 25th and 26th of October this year at Hotel Blijdorp-Rotterdam. The theme for this year was Space. Six teams competed against eachother. We had two fun energizers, one being a physically demanding obstacle run and the other a calming, but more inclusive game of cornhole. Team Orbit Overload Overlords: Orchestrating Orbital Operations won the audience vote with their idea of replacing the self-assessment everyone takes before joining Capgemini with a more fun and practical puzzlebox. Team Star Tech won the judges vote with an idea for an app that would gain Capgemini employees more exposure and this would help you during appraisals.',
+  },
   2023: {
     images: [
       {
@@ -104,11 +164,7 @@ const pastEvents = {
       },
     ],
     year: '2022',
-    // Date/location (20, 21 & 22 oct, hotel zuiderduin -egmond aan zee)
-
-    // energizers (yoga, bowling, nerf guns)
-    // Winners
-    text: 'This Capathon edition was held on 20th - 22nd of October 2022, at Hotel Zuiderduin in Egmond aan Zee (Noord-Holland). This theme was all about sustainability. 80 people competed against eachother in teams of 5-8. We had fun energizers such as doing yoga, you could play bowling with your team, have nerf gun battles (although this was pretty much throughout the event) or enjoy walks on the beach with a nice autumn breeze. We had two winners! Each won the Jury and Audience votes respectively. Team Esther built a concept utilising a drone, to check upon local population levels of bees in certain fields and plots. To aid in pollination of plants and visualising healing growth in number of bees...',
+    text: 'This Capathon edition was held on 20th - 22nd of October 2022, at Hotel Zuiderduin in LOLEgmond aan Zee (Noord-Holland). This theme was all about sustainability. 80 people competed against eachother in teams of 5-8. We had fun energizers such as doing yoga, you could play bowling with your team, have nerf gun battles (although this was pretty much throughout the event) or enjoy walks on the beach with a nice autumn breeze. We had two winners! Each won the Jury and Audience votes respectively. Team Esther built a concept utilising a drone, to check upon local population levels of bees in certain fields and plots. To aid in pollination of plants and visualising healing growth in number of bees...',
   },
 };
 
@@ -118,10 +174,14 @@ const optionalTextWhyColorOptions = ['textWhyBlue', 'textWhyPurple', 'textWhyPin
 optionalTextWhyColorOptions.sort(() => 0.5 - Math.random());
 
 function App() {
-  const [selectedYear, setSelectedYear] = useState(pastEvents['2022']);
+  const [selectedYear, setSelectedYear] = useState(pastEvents['2024']);
 
   function selectYear(num) {
     switch (num) {
+      case 2024: {
+        setSelectedYear(pastEvents['2024']);
+        break;
+      }
       case 2023: {
         setSelectedYear(pastEvents['2023']);
         break;
@@ -131,7 +191,7 @@ function App() {
         break;
       }
       default: {
-        setSelectedYear(pastEvents['2021']);
+        setSelectedYear(pastEvents['2024']);
       }
     }
   }
@@ -185,6 +245,14 @@ function App() {
                   isActive={selectedYear.year === '2023'}
                 >
                   2023
+                </Button>
+                <Button
+                  onClick={() => selectYear(2024)}
+                  buttonStyle="btn-medium"
+                  buttonSize="btn--large"
+                  isActive={selectedYear.year === '2024'}
+                >
+                  2024
                 </Button>
               </div>
               <CardText
