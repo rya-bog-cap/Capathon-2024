@@ -66,7 +66,7 @@ function CardHero({ id, src, alt, text, description, cardDirectionCSS, link }) {
           <table className="capthon-details-table">
             <tr>
               <td><h2>Theme</h2></td>
-              <td><p>To be revealed on the 16th of October</p></td>
+              <td><p>Space!</p></td>
             </tr>
             <tr>
               <td><h2>Date</h2></td>
@@ -112,7 +112,7 @@ function CardHero({ id, src, alt, text, description, cardDirectionCSS, link }) {
                 </Button>:<></>}
               </div>
             :
-              <div>The event has started already, see you next year!</div>
+              <div>This event is already over, see you next year?!</div>
           }
           {/* <figure className="cards-item-pic-wrap">
             <img className="cards-item-img" src={src} alt={alt} />

@@ -12,15 +12,16 @@ function Footer({ title, description, link }) {
         </div>
 
         <div className="singup-footer">
-          <Button
+          {/* <Button
             // onClick={handleClick}
             to={link}
             buttonStyle="btn--primary"
             buttonSize="btn--large"
             elemStyle={{ 'font-size': '2.5rem' }}
+            disabled={true}
           >
-            Sign Up
-          </Button>
+            Sign Up (not yet started)
+          </Button> */}
           {/* <img src={tonGif} /> */}
         </div>
       </div>

@@ -66,7 +66,7 @@ function NavBar() {
               FAQ
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/"
               className="nav-signup-mobile"
@@ -81,7 +81,7 @@ function NavBar() {
             >
               Sign up!
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

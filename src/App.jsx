@@ -3,7 +3,6 @@ import NavBar from './components/NavBar';
 import './App.css';
 import { useState } from 'react';
 import BgGridVideo from './assets/videos/grid-loop.mp4';
-import tomGif from './assets/videos/tomOutro.gif';
 import CardHero from './components/CardHero';
 import CardCaroussell from './components/CardCaroussell';
 import CardText from './components/CardText';
@@ -25,55 +24,55 @@ const pastEvents = {
         original: '2024/01-min.jpg',
       },
       {
-        original: '2024/02.jpg',
+        original: '2024/02-min.jpg',
       },
       {
-        original: '2024/03.jpg',
+        original: '2024/03-min.jpg',
       },
       {
-        original: '2024/04.jpg',
+        original: '2024/04-min.jpg',
       },
       {
-        original: '2024/05.JPG',
+        original: '2024/05-min.jpg',
       },
       {
-        original: '2024/06.jpg',
+        original: '2024/06-min.jpg',
       },
       {
-        original: '2024/07.jpg',
+        original: '2024/07-min.jpg',
       },
       {
-        original: '2024/08.jpg',
+        original: '2024/08-min.jpg',
       },
       {
-        original: '2024/09.jpg',
+        original: '2024/09-min.jpg',
       },
       {
-        original: '2024/10.jpg',
+        original: '2024/10-min.jpg',
       },
       {
-        original: '2024/11.jpg',
+        original: '2024/11-min.jpg',
       },
       {
-        original: '2024/12.jpg',
+        original: '2024/12-min.jpg',
       },
       {
-        original: '2024/13.jpg',
+        original: '2024/13-min.jpg',
       },
       {
-        original: '2024/14.jpg',
+        original: '2024/14-min.jpg',
       },
       {
-        original: '2024/15.jpg',
+        original: '2024/15-min.jpg',
       },
       {
-        original: '2024/16.jpg',
+        original: '2024/16-min.jpg',
       },
       {
-        original: '2024/17.jpg',
+        original: '2024/17-min.jpg',
       },
       {
-        original: '2024/18.jpg',
+        original: '2024/18-min.jpg',
       },
     ],
     year: '2024',
@@ -267,8 +266,7 @@ function App() {
             <h1>Organization</h1>
             {/* max-width: 60vw; margin: auto; */}
             <article style={{ 'max-width': '60vw', margin: 'auto' }}>
-              If you have any questions about the upcoming event feel free to contact anyone from
-              this years organisation!
+              If you have any questions about this event, or next year's, feel free to contact anyone from the organisation!
             </article>
             <div className="portrait-row">
               <CardPortrait
@@ -377,8 +375,8 @@ function App() {
         </main>
         <section id="section-four">
           <Footer
-            title="Getting excited?"
-            description="Sign up and join the adventure of building the unknown!"
+            title="Getting excited for next year?"
+            description="Stay tuned for more information on this website :)"
             link={
               formLink
             }
